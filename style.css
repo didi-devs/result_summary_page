@@ -48,6 +48,8 @@
 }
 
 .result-summary {
+    --padding: 30px;
+    --border-radius: 20px;
     max-width: 500px;
     display: grid;
 }
@@ -55,8 +57,26 @@
 @media (min-width: 600px) {
     .result-summary {
         grid-template-columns: 1fr 1fr;
-        border-radius: 20px;
+        border-radius: var(--border-radius);
+        overflow: hidden;
         box-shadow:  1px 1px 5px 0px rgba(0, 0, 0, 0.3);
 
     }
+}
+
+.results {
+    text-align: center;
+    color: rgb(231, 226, 225);
+    background: linear-gradient(180deg, rgba(13, 88, 158, 0.46), rgba(2, 21, 36, 0.87));
+    border-radius:
+    0 0 var(--border-radius) var(--border-radius) ;
+}
+
+.summary {
+    text-align: center;
+}
+
+.results,
+.summary {
+    padding: var(--padding)
 }
