@@ -46,3 +46,17 @@
     background-color: rgb(3, 3, 68);
     color: rgb(255, 255, 255);
 }
+
+.result-summary {
+    max-width: 500px;
+    display: grid;
+}
+
+@media (min-width: 600px) {
+    .result-summary {
+        grid-template-columns: 1fr 1fr;
+        border-radius: 20px;
+        box-shadow:  1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+
+    }
+}
