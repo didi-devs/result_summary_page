@@ -45,6 +45,7 @@
     color: rgb(223, 215, 215);
     border-radius: 75px;
     border: 0;
+    width: 200px;
     padding: 10px 5px;
     margin-top: 20px;
     display: block;
@@ -115,7 +116,8 @@
    display: flex;
    justify-content: space-between ;
    align-items: center;
-   padding: 5px;
+   padding: 6px;
+   margin: 20px 2px 2px 0;
    border-radius: 10px;
    /* background-color: rgb(100, 128, 180); */
 }
@@ -131,7 +133,22 @@
     padding: var(--padding)
 }
 
-.summary-item [data-item-type="accent-1"] {
-    color: rgb(30, 17, 202);
-    background-color: brown;
+.summary-item[data-item-type="accent-1"] {
+    color: rgb(202, 17, 17);
+    background-color: rgba(236, 22, 22, 0.1);
+}
+
+.summary-item[data-item-type="accent-2"] {
+    color: rgb(240, 221, 47);
+    background-color: rgba(182, 182, 64, .16);
+}
+
+.summary-item[data-item-type="accent-3"] {
+    color: rgb(48, 179, 8);
+    background-color: rgba(10, 218, 90, 0.1);
+}
+
+.summary-item[data-item-type="accent-4"] {
+    color: rgb(30, 67, 167);
+    background-color: rgba(28, 13, 228, 0.1);
 }
